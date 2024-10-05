@@ -1,0 +1,2 @@
+git config --global user.name Monsatto
+git config --global user.email tiagoguero11@gamil.com

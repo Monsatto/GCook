@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GCook.Models
+namespace GCook.Models;
 
 [Table("Comentario")]
 public class Comentario
