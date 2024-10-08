@@ -7,7 +7,7 @@ namespace GCook.Models;
 public class ReceitaIngrediente
 {
     [Key, Column(Order = 1)]
-    public int RceitaId { get; set; }
+    public int ReceitaId { get; set; }
     [ForeignKey("ReceitaId")]
 
     public Receita Receita {get; set; }
@@ -23,5 +23,4 @@ public class ReceitaIngrediente
 
     [StringLength(200)]
     public string Preparo { get; set;}
-    public object ReceitaId { get; internal set; }
 }
