@@ -24,6 +24,6 @@ public class AppDbContext : IdentityDbContext
         AppDbSeed seed = new(builder);
 
         builder.Entity<ReceitaIngrediente>()
-            .HasKey(ri => new { ri.ReceitaId, ri.Ingrediente });
+            .HasKey(ri => new { ri.ReceitaId, ri.IngredienteId });
     }
 }
