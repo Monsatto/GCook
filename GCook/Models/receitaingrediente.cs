@@ -23,4 +23,5 @@ public class ReceitaIngrediente
 
     [StringLength(200)]
     public string Preparo { get; set;}
+    public object ReceitaId { get; internal set; }
 }

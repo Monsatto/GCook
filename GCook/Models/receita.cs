@@ -27,6 +27,10 @@ public class Receita
     public string Foto { get; set; }
 
     [Required]
+    [StringLength(8000)]
+    public string Preparo { get; set; }
+
+    [Required]
     public int CategoriaId { get; set; }
     [ForeignKey("CategoriaId")]
     public Categoria Categoria { get; set; }
