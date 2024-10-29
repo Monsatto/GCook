@@ -1,0 +1,3 @@
+Gerar Controller e Views de CRUD
+
+dotnet-aspnet-codegenerator controller -name CategoriasController -m Categoria -dc AppDbContext -outDir Controllers -l "~/Views/Shared/_LayoutAdmin.cshtml"
