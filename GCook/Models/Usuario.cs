@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity;
 namespace GCook.Models;
 
 [Table("Usuario")]
-    public class Usuario
+public class Usuario
 {
     [Key]
     public string UsuarioId { get; set; }

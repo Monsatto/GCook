@@ -1,5 +1,4 @@
 using GCook.Models;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,6 +23,6 @@ public class AppDbContext : IdentityDbContext
         AppDbSeed seed = new(builder);
 
         builder.Entity<ReceitaIngrediente>()
-            .HasKey(ri => new { ri.ReceitaId, ri.IngredienteId });
+            .HasKey(ri => new {ri.ReceitaId, ri.IngredienteId});
     }
 }

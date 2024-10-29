@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace GCook.Models;
 
 [Table("Categoria")]
-    public class Categoria
+public class Categoria
 {
     [Key]
     public int Id { get; set; }
@@ -14,7 +14,7 @@ namespace GCook.Models;
     public string Nome { get; set; }
 
     [StringLength(300)]
-    public string Foto { get; set; } 
+    public string Foto { get; set; }
 
-    public bool ExibirHome { get; set; } = false;        
+    public bool ExibirHome { get; set; } = false;
 }

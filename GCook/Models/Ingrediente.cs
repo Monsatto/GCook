@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-
 namespace GCook.Models;
 
 [Table("Ingrediente")]
@@ -14,5 +13,5 @@ public class Ingrediente
     [StringLength(50)]
     public string Nome { get; set; }
 
-    public ICollection<ReceitaIngrediente> Receitas { get; set;}
+    public ICollection<ReceitaIngrediente> Receitas { get; set; }
 }
