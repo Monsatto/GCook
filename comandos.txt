@@ -1,3 +1,16 @@
+git config --global user.name Monsatto
+git config --global user.email tiagoguero11@gamil.com
+
+
 Gerar Controller e Views de CRUD
 
+dotnet new mvc -o GCook
+
+cd GCook
+
+dotnet ef migrations add InitialCreate
+
+dotnet ef database update
+
 dotnet-aspnet-codegenerator controller -name CategoriasController -m Categoria -dc AppDbContext -outDir Controllers -l "~/Views/Shared/_LayoutAdmin.cshtml"
+
